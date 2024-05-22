@@ -17,11 +17,19 @@ repositories {
 }
 
 dependencies {
-    // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+   // https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.0'
 
-    // This dependency is used by the application.
-    implementation 'com.google.guava:guava:31.1-jre'
+    // https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting
+    implementation 'net.masterthought:cucumber-reporting:5.7.3'
+}
+sourceSets {
+    test {
+        resources{
+        srcDir file ('src/test/java')
+        exclude '**/*.java'
+        }
+    }
 }
 
 application {
