@@ -14,6 +14,24 @@ Scenario Outline: Make a query to people and validate the response to all
     When method get 
     Then status 200
 
+    Examples:
+    |   id  |
+    |   1   |
+    |   10  |
+    |   20  |
+    |   30  |
+    |   40  |
+    |   50  |
+    |   60  |
+    |   70  |
+    |   80  |
+    |   90  |
+    |   82  |
+    |   100 |
+
+
+
+
 
 
 
